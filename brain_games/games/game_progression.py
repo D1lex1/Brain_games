@@ -10,11 +10,11 @@ def progression():
     progression_list = []
     progression_start = random.randint(0, 25)
     while progression_lenght != 0:
-        progression.append(progression_start)
+        progression_list.append(progression_start)
         progression_start += progression_step
         progression_lenght -= 1
-    progression_str = ' '.join([str(num) for num in progression])
-    return progression_str, progression_list
+    progression_str = ' '.join([str(num) for num in progression_list])
+    return progression_list, progression_str
 
 
 def game_output():
