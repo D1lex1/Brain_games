@@ -6,40 +6,40 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/d5a163aac0d0bebd2e90/maintainability)](https://codeclimate.com/github/D1lex1/python-project-49/maintainability)
 
 
-BRAIN GAMES - Это набор из пяти несложных игр, которые позволяют вам тренировать ваш ум. Из чего состоит этот набор:
+BRAIN GAMES - This is a set of five simple games that allow you to train your mind. To try it out, all you have to do is enter the dataset package from PyPI and run one of the games on your Linux terminal. All commands for launching individual games are listed below:
 
-    1. brain-calc - игра которая просит вас найти сумму, разность или произведение двух чисел.
+    1. brain-calc - the game that asks you to find the sum, difference or product of two numbers.
 
-    2. brain-even - игра которая просит вас определить четное чило или нет.
+    2. brain-even - the game that asks you to determine whether a number is even or not.
 
-    3. brain-gcd - игра в которой вам нужно найти наибольший общий делитель двух чисел.
+    3. brain-gcd - the game in which you need to find the greatest common divisor of two numbers.
 
-    4. brain-prinme - игра в которой нужно определить является ли число простым.
+    4. brain-prinme - the game in which you need to determine whether a number is prime.
 
-    5. brain-progression - игра в которой вам нужно найти пропущенное число в последовательности.
+    5. brain-progression - the game in which you need to find the missing number in the progression.
 
     
 
-1 - ТЕСТ ИГРЫ BRAIN-CALC
+1 - GAME TEST - BRAIN-CALC
 
-https://asciinema.org/a/wo7r1ANtDygW7qdgWZGizzPZE
-
-
-2 - ТЕСТ ИГРЫ BRAIN-EVEN
-
-https://asciinema.org/a/QT9MpHMCvmY0BVPIJLd4AV6u4
+[![asciicast](https://asciinema.org/a/wo7r1ANtDygW7qdgWZGizzPZE.svg)](https://asciinema.org/a/wo7r1ANtDygW7qdgWZGizzPZE)
 
 
-3 - ТЕСТ ИГРЫ BRAIN-GCD
+2 - GAME TEST - BRAIN-EVEN
 
-https://asciinema.org/a/gXZCAhrZPXPdRl7Z9sOZHqoDP
-
-
-4 - ТЕСТЫ ИГРЫ BRAIN-PRIME
-
-https://asciinema.org/a/uDkp58r0KvGKPYJwHstpz0mSj
+[![asciicast](https://asciinema.org/a/QT9MpHMCvmY0BVPIJLd4AV6u4.svg)](https://asciinema.org/a/QT9MpHMCvmY0BVPIJLd4AV6u4)
 
 
-5 - ТЕСТ ИГРЫ BRAIN-PROGRESSION
+3 - GAME - TEST - BRAIN-GCD
 
-https://asciinema.org/a/nRWfCkoHAaU5xECpjpHW4gjqj
+[![asciicast](https://asciinema.org/a/gXZCAhrZPXPdRl7Z9sOZHqoDP.svg)](https://asciinema.org/a/gXZCAhrZPXPdRl7Z9sOZHqoDP)
+
+
+4 - GAME TEST - BRAIN-PRIME
+
+[![asciicast](https://asciinema.org/a/uDkp58r0KvGKPYJwHstpz0mSj.svg)](https://asciinema.org/a/uDkp58r0KvGKPYJwHstpz0mSj)
+
+
+5 - GAME TEST - BRAIN-PROGRESSION
+
+[![asciicast](https://asciinema.org/a/nRWfCkoHAaU5xECpjpHW4gjqj.svg)](https://asciinema.org/a/nRWfCkoHAaU5xECpjpHW4gjqj)
