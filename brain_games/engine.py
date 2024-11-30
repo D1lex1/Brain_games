@@ -1,5 +1,4 @@
-#!/usr/bin/env python3
-from prompt import string
+import prompt
 import sys
 
 
@@ -7,15 +6,15 @@ ITERATIONS = 3
 
 
 def greet():
-    print("Welcome to the Brain Games!")
-    name = string('Can i have your name? ')
+    name = prompt.string("Welcome to the Brain Games!\n"
+                         "Can i have your name? ")
     print(f'Hello, {name}')
     return name
 
 
 def engine(correct_answer, question, name):
     print(f"Question: {question}")
-    user_answer = string("Your answer: ")
+    user_answer = prompt.string("Your answer: ")
     if correct_answer == user_answer:
         print("Correct!")
     else:
@@ -25,10 +24,9 @@ def engine(correct_answer, question, name):
         sys.exit()
 
 
-def start_game(game):
+def start_game(correct_answer, question):
     name = greet()
-    print(game.START_QUESTION)
     for round in range(ITERATIONS):
-        correct_answer, question = game.game_output()
+        correct_answer, question = game_output()
         engine(correct_answer, question, name)
     print(f"Congratulations, {name}!")
