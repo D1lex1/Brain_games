@@ -27,6 +27,5 @@ def engine(correct_answer, question, name):
 def start_game(correct_answer, question):
     name = greet()
     for round in range(ITERATIONS):
-        correct_answer, question = game_output()
         engine(correct_answer, question, name)
     print(f"Congratulations, {name}!")
