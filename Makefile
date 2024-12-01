@@ -40,8 +40,4 @@ brain-prime:
 
 brain-progression:
 	poetry run brain-progression
-
-setup:
-	poetry install
-	poetry build
 	
