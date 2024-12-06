@@ -1,12 +1,13 @@
-import random
-from brain_games.game_launcher import start_game
+from brain_games.consts import PROGRESSION_INSTRUCTION
+from brain_games.engine import engine
+from brain_games.utilities import get_random_num
 
 
 def progression():
-    progression_step = random.randint(1, 5)
-    progression_lenght = random.randint(5, 10)
+    progression_step = get_random_num(1, 5)
+    progression_lenght = get_random_num(5, 10)
     progression_list = []
-    progression_start = random.randint(0, 25)
+    progression_start = get_random_num(0, 25)
     while progression_lenght != 0:
         progression_list.append(progression_start)
         progression_start += progression_step
@@ -16,16 +17,13 @@ def progression():
 
 
 def game_output():
-    result = []
-    for rounds in range(3):
-        progression_list, progression_str = progression()
-        correct_answer = progression_list[
-            random.randint(0, len(progression_list) - 1)
-        ]
-        question = progression_str.replace(str(correct_answer), '..', 1)
-        result.append((str(correct_answer), question))
-    return result
+    progression_list, progression_str = progression()
+    correct_answer = progression_list[
+        get_random_num(0, len(progression_list) - 1)
+    ]
+    question = progression_str.replace(str(correct_answer), '..', 1)
+    return question, str(correct_answer)
 
 
 def run_progression_game():
-    start_game(game_output(), 4)
+    engine(game_output, PROGRESSION_INSTRUCTION)

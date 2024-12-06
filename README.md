@@ -18,7 +18,23 @@ BRAIN GAMES - This is a set of five simple games that allow you to train your mi
 
     5. brain-progression - the game in which you need to find the missing number in the progression.
 
-    
+### Used techologies:
+<pre>
+python v. "^3.12"
+prompt v. "^0.4.1"
+ruff v. "^0.8.2"
+</pre>
+
+
+### How to install, delete:
+<pre>
+$ git clone https://github.com/D1lex1/Brain_games
+$ cd Brain_games
+$ make install (for install)
+$ cd .. & rm Brain_games (for delete)
+$ make reinstall (for reinstall)
+</pre>
+
 
 1 - GAME TEST - BRAIN-CALC
 

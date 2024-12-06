@@ -19,7 +19,7 @@ package-install:
 
 
 lint:
-	poetry run flake8 brain_games
+	poetry run ruff check
 
 
 brain-calc:
@@ -40,4 +40,7 @@ brain-prime:
 
 brain-progression:
 	poetry run brain-progression
-	
+
+
+reinstall:
+	pip install --user --force-reinstall dist/*.whl

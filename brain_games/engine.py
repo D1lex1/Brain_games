@@ -1,21 +1,25 @@
 import prompt
 
-
-def greet():
-    name = prompt.string(
-        "Welcome to the Brain Games!\nCan I have your name? "
-    )
-    print(f'Hello, {name}')
-    return name
+from brain_games.consts import ROUNDS_NUMBER
 
 
-def engine(name, correct_answer, question):
-    print(f"Question: {question}")
-    user_answer = prompt.string("Your answer: ")
-    if correct_answer == user_answer:
-        print("Correct!")
-    else:
-        print(f"'{user_answer}' is wrong answer ;(. "
-              f"Correct answer was '{correct_answer}'")
-        print(f"Let's try again, {name}!")
-        return True
+def engine(game_values, start_question):
+    name = prompt.string('Welcome to the Brain Games!\n'
+                         'May I have your name? ')
+    print(f'Hello, {name}!\n'
+          f'{start_question}')
+
+    for round in range(ROUNDS_NUMBER):
+        question, correct_answer = game_values()
+        user_answer = prompt.string(f'Question: {question}\n'
+                                    f'Your answer: ')
+
+        if user_answer == correct_answer:
+            print('Correct!')
+        else:
+            print(f"'{user_answer}' is wrong answer ;(. "
+                f"Correct answer was '{correct_answer}'.\n"
+                f"Let's try again, {name}!")
+            return
+
+    print(f'Congratulations, {name}!')
