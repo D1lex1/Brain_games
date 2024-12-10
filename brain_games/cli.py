@@ -6,4 +6,3 @@ def welcome_user():
         "Welcome to the Brain Games!\nCan I have your name? "
     )
     print(f'Hello, {name}')
-    return name
